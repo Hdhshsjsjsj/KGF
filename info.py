@@ -49,7 +49,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 # Bot settings
 CACHE_TIME = 300
 USE_CAPTION_FILTER = False
-NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/89de0d28af87a9f06751f.jpg")
+NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/0a844fe2164fe700d1360.jpg")
 PICS = (environ.get('PICS', '')).split()
 SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/314928baed9a9c277072f.jpg")
 
@@ -61,7 +61,7 @@ MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/b26637d70f3630a7e
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6874351976 6047510747').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001831375385 -10012345688 -1001658823824 -1001659557643 -1001895564079 -10027378293 -10073837388 -1001765720202').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -77,7 +77,7 @@ COMMAND_HAND_LER = ("/")
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://amubaby:amubaby@lallus.84sdfpw.mongodb.net/?retryWrites=true&w=majority&appName=lallus")
+MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://jacky:jacky@kgf.7aamrkc.mongodb.net/?retryWrites=true&w=majority&appName=kgf")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
