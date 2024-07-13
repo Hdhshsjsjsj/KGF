@@ -55,8 +55,9 @@ async def start(client, message):
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="t.me/LCULINKZ")
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SUR_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -78,8 +79,9 @@ async def start(client, message):
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="t.me/LCULINKZ")
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SUR_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
