@@ -975,11 +975,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url="https://t.me/Leomessi_10_19")
                   ],[
-            InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/cinemaworld_123"),
-            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/cinemaworld_update")
+            InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/LUCGROUP"),
+            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/LCULINKZ")
                   ],[
             InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/cinemaworld_123"),
-            InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/moviebot_channel")
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/cinemaworld_update")
                   ],[
             InlineKeyboardButton("⇍Bᴀᴄᴋ", callback_data="start")
         ]]   
