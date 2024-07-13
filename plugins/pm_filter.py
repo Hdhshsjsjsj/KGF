@@ -587,7 +587,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.SUR_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -606,7 +606,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT,(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.SUR_TXT,(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1048,15 +1048,13 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"""<b>🎬 {search} {year}
-{runtime} | {release_date}</b>
+        cap = f"""<b>🎪 ᴛɪᴛɪʟᴇ {search}
 
-<blockquote>⭐️ IMDB ➠ {rating}
-🌏 Country ➠ {countries}
-🔉 Language ➠ {languages}
-⚙️ Votes ➠ {votes}</blockquote>
+┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}
+┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝐋𝐔𝐂𝐈𝐅𝐄𝐑](https://t.me/Luciferv99_bot)
+┗ 🍁 ᴄʜᴀɴɴᴇʟ : [𝐋𝐂𝐔](https://t.me/LCULINKZ)</b>
 
-<i>**®️ {message.chat.title}**</i>"""
+<i>®️ {message.chat.title}</i>"""
     if imdb and imdb.get('poster'):
         try:
             pic_fi=await message.reply_photo(photo=NOR_IMG, caption=cap[:1024],
