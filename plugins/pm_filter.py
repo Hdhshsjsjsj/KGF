@@ -828,7 +828,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.GROUP_INFO,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-)
         )
     elif query.data == "stats":
         buttons = [[
