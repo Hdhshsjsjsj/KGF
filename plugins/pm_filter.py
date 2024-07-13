@@ -591,6 +591,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+ 
     elif query.data == "lool":
         buttons = [[
             InlineKeyboardButton('⊗Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⊗', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
