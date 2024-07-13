@@ -588,7 +588,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('👑 Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
                     InlineKeyboardButton('⊙ Sᴜᴘᴘᴏʀᴛ Lɪꜱᴛ', callback_data="group_info")
                 ],[
-                    InlineKeyboardButton('🛠 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🛠 Hᴇʟᴘ', callback_data='help2'),
                     InlineKeyboardButton('⌂ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
                 ],[
@@ -956,6 +956,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton ('Cᴏɴᴛᴀᴄᴛ', url="t.me/Leomessi_10_19")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/bd26fa519783e24f0b7e2.jpg")
+        )
         await query.message.edit_text(
             text=script.OWNER_INFO,
             reply_markup=reply_markup,
