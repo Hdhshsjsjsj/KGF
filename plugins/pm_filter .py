@@ -609,8 +609,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.START_TXT,(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "help2":
+         )
+     elif query.data == "help2":
         buttons = [[
             InlineKeyboardButton('Mᴏʀᴇ Fᴇᴀᴛᴜʀᴇꜱ', callback_data='help')  
         ], [
