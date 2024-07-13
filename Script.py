@@ -285,15 +285,13 @@ Name - {}
 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ
 </b>"""
     IMDB_TEMPLATE_TXT = """
-<b>🎬 {search} {year}
-{runtime} | {release_date}</b>
+<b>🎪 ᴛɪᴛɪʟᴇ {search}
 
-<blockquote>⭐️ IMDB ➠ {rating}
-🌏 Country ➠ {countries}
-🔉 Language ➠ {languages}
-⚙️ Votes ➠ {votes}</blockquote>
+┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}
+┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝐋𝐔𝐂𝐈𝐅𝐄𝐑](https://t.me/Luciferv99_bot)
+┗ 🍁 ᴄʜᴀɴɴᴇʟ : [𝐋𝐂𝐔](https://t.me/LCULINKZ)</b>
 
-<i>**®️ {message.chat.title}**</i>
+<i>®️ {message.chat.title}</i>
 """
 
     CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <code>{file_name}</code>
