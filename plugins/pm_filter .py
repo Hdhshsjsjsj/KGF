@@ -607,10 +607,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✬ Fɪʟᴇ Sᴛᴏʀᴇ ✬', callback_data='store_file'),
         ], [
             InlineKeyboardButton('✰ Cᴏɴɴᴇᴄᴛɪᴏɴꜱ ✰', callback_data='coct'),
-            InlineKeyboardButton('✯ Exᴛʀᴀ Mᴏᴅꜱ ✯', callback_data='extra')   
+            InlineKeyboardButton('✯ Exᴛʀᴀ Mᴏᴅꜱ ✯', callback_data='extra'),   
         ], [
             InlineKeyboardButton('✬ Hᴏᴍᴇ ✬', callback_data='start'),
-            InlineKeyboardButton('✧ Sᴛᴀᴛᴜꜱ ✧', callback_data='stats')
+            InlineKeyboardButton('✧ Sᴛᴀᴛᴜꜱ ✧', callback_data='stats'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(                     
