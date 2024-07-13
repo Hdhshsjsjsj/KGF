@@ -600,7 +600,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
          )
      elif query.data == "help2":
-        buttons = [[
+         buttons = [[
             InlineKeyboardButton('Mᴏʀᴇ Fᴇᴀᴛᴜʀᴇꜱ', callback_data='help')  
         ], [
             InlineKeyboardButton('✮ Fɪʟᴛᴇʀs ✮', callback_data='filters'),
@@ -618,7 +618,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "help"
+    elif query.data == "help":
         buttons = [[
              InlineKeyboardButton('sᴛɪᴄᴋɪᴅ', callback_data='sticker'),
              InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele'),
@@ -626,7 +626,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
          ], [
             InlineKeyboardButton('↭ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ​↭', callback_data='help2')
          ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
+        reply_markup = InlineKeyboardMarkup(buttons),
         await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
