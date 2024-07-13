@@ -616,7 +616,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(                     
             text=script.HELPER_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+            parse_mode=enums.ParseMode.HTML,
         )
     elif query.data == "help":
         buttons = [[
