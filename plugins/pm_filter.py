@@ -1142,9 +1142,10 @@ async def auto_filter(client, msg, spoll=False):
             ]
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
-        BUTTONS[key] = search
+        BUTTONS[key] = search(
         req = message.from_user.id if message.from_user else 0
         )
+        
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
