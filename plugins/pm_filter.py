@@ -1137,7 +1137,7 @@ async def auto_filter(client, msg, spoll=False):
     if settings["button"]:
         btn = [
             [
-                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start={pquery}")     
+                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=get_search_results")     
               ]
             ]
     if offset != "":
@@ -1183,7 +1183,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"""<b>🎪 ᴛɪᴛɪʟᴇ {search}
 
 ┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}
-┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝐋𝐔𝐂𝐈𝐅𝐄𝐑](https://t.me/Luciferv99_bot)
+┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {total_results}
 ┗ 🍁 ᴄʜᴀɴɴᴇʟ : [𝐋𝐂𝐔](https://t.me/LCULINKZ)</b>
 
 <i>®️ {message.chat.title}</i>"""
